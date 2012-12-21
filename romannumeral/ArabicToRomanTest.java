@@ -4,9 +4,9 @@ package romannumeral;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-public class ArabicToRomanConverterTest {
+public class ArabicToRomanTest {
 
-    private ArabicToRomanConverter arabicToRomanConversion = new ArabicToRomanConverter();
+    private ArabicToRoman arabicToRomanConversion = new ArabicToRoman();
 
     @org.junit.Test
     public void shouldPrintFrom1To3(){
