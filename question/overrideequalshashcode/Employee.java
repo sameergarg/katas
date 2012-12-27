@@ -9,8 +9,7 @@ import java.util.Date;
  * Time: 18:16
  * To change this template use File | Settings | File Templates.
  */
-public class Employee {
-    int id;
+public class Employee extends Person{
 
     String firstName;
     
@@ -21,7 +20,7 @@ public class Employee {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Employee)) return false;
+        if (!(o.getClass().equals(Employee.class))) return false;
 
         Employee employee = (Employee) o;
 

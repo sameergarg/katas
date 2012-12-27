@@ -1,8 +1,6 @@
-package question.maxdifference;
+package maxdifference;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -18,6 +16,7 @@ public class MaxDifference {
      * @param numbers
      * @return
      * @throws IllegalArgumentException if input array is null or blank
+     * @throws ArithmeticException if the difference is outside the range of {@link Integer#MAX_VALUE} or {@link Integer#MIN_VALUE}
      */
     public int difference(int[] numbers) {
 

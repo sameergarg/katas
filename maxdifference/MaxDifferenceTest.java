@@ -1,4 +1,4 @@
-package question.maxdifference;
+package maxdifference;
 
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
@@ -39,7 +39,7 @@ public class MaxDifferenceTest {
 
     @Test
     public void difference_when_it_overflows_due_to_extreme_values(){
-        System.out.println("Max:"+Integer.MAX_VALUE+",Min:"+Integer.MIN_VALUE+",Difference:"+((long)(Integer.MAX_VALUE-Integer.MIN_VALUE)));
+        System.out.println("Max:"+Integer.MAX_VALUE+",Min:"+Integer.MIN_VALUE+",Difference:"+(((long)Integer.MAX_VALUE-(long)Integer.MIN_VALUE)));
         MatcherAssert.assertThat(maxDifference.difference(new int[]{1, Integer.MIN_VALUE, 5, Integer.MAX_VALUE, 6}), Matchers.equalTo((Integer.MAX_VALUE-Integer.MIN_VALUE)));
     }
     @Test
