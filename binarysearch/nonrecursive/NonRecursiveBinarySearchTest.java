@@ -1,8 +1,8 @@
-package binarysearch.recursive;
+package binarysearch.nonrecursive;
 
 import org.junit.Test;
 
-import static binarysearch.recursive.RecursiveBinarySearch.search;
+import static binarysearch.nonrecursive.NonRecursiveBinarySearch.search;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -13,11 +13,16 @@ import static org.junit.Assert.assertThat;
  * Time: 15:49
  * To change this template use File | Settings | File Templates.
  */
-public class RecursiveBinarySearchTest {
+public class NonRecursiveBinarySearchTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void searchWhenNoElementsInList(){
-        search(1, new int[]{});
+        NonRecursiveBinarySearch.search(1, new int[]{});
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void searchWhenElementsListINull(){
+        NonRecursiveBinarySearch.search(1, null);
     }
 
     @Test
