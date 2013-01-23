@@ -1,4 +1,4 @@
-package binarysearch.nonrecursive;
+package algorithms.search.binarysearch.nonrecursive;
 
 
 public class NonRecursiveBinarySearch {

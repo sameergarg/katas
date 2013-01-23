@@ -1,8 +1,8 @@
-package sort;
+package algorithms.sort;
 
 import org.junit.Test;
 
-import static sort.MergeSort.sort;
+import static algorithms.sort.MergeSort.sort;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 

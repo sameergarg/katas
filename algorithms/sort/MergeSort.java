@@ -1,4 +1,4 @@
-package sort;
+package algorithms.sort;
 
 /**
  * Created with IntelliJ IDEA.

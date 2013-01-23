@@ -1,6 +1,4 @@
-package binarysearch.recursive;
-
-import java.util.Arrays;
+package algorithms.search.binarysearch.recursive;
 
 import static java.util.Arrays.copyOfRange;
 

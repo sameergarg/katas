@@ -1,11 +1,10 @@
-package sort;
+package algorithms.sort;
 
 import org.junit.Test;
 
-import static java.util.Arrays.asList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static sort.QuickSort.sort;
+import static algorithms.sort.QuickSort.sort;
 
 /**
  * Created with IntelliJ IDEA.
