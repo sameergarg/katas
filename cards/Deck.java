@@ -8,13 +8,6 @@ import java.util.List;
 import static cards.Rank.*;
 import static cards.Suite.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: sameer
- * Date: 09/01/2013
- * Time: 14:16
- * To change this template use File | Settings | File Templates.
- */
 public class Deck {
 
     private List<Card> cards;
@@ -28,7 +21,7 @@ public class Deck {
         }
     }
 
-    public Deck shuffle(){
+    private Deck shuffle(){
         Collections.shuffle(cards);
         return this;
     }
