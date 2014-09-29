@@ -3,10 +3,13 @@ import java.text.NumberFormat;
 import java.util.List;
 
 import static java.util.Collections.frequency;
+import static java.util.Collections.nCopies;
 
 public class CheckoutSystem {
 
 
+    private static final int APPLE_COST = 60;
+    private static final int ORANGE_COST = 25;
     private static final String APPLE = "Apple";
     private static final String ORANGE = "Orange";
 
@@ -28,10 +31,10 @@ public class CheckoutSystem {
         int total = 0;
 
         int apples = frequency(shoppingCart, APPLE);
-        total += offerServiceFactory.offerFor(APPLE).apply(apples);
+        total += offerServiceFactory.offerFor(APPLE).apply(nCopies(apples, APPLE_COST).toArray(new Integer[apples]));
 
         int oranges = frequency(shoppingCart, ORANGE);
-        total += offerServiceFactory.offerFor(ORANGE).apply(oranges);
+        total += offerServiceFactory.offerFor(ORANGE).apply(nCopies(oranges, ORANGE_COST).toArray(new Integer[oranges]));
 
         return total;
     }

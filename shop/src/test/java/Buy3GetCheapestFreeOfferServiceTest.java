@@ -21,9 +21,9 @@ public class Buy3GetCheapestFreeOfferServiceTest {
         //when
 
         //then
-        assertThat("1 item", new Buy3GetCheapestFreeOfferService(new int[]{60}).apply(1), is(60));
-        assertThat("2 item", new Buy3GetCheapestFreeOfferService(new int[]{60,40}).apply(2), is(100));
-        assertThat("3 item", new Buy3GetCheapestFreeOfferService(new int[]{60,40,80}).apply(3), is(140));
-        assertThat("4 item", new Buy3GetCheapestFreeOfferService(new int[]{60,40,80,80}).apply(4), is(220));
+        assertThat("1 item", new Buy3GetCheapestFreeOfferService().apply(new Integer[]{60}), is(60));
+        assertThat("2 item", new Buy3GetCheapestFreeOfferService().apply(new Integer[]{60,40}), is(100));
+        assertThat("3 item", new Buy3GetCheapestFreeOfferService().apply(new Integer[]{60,40,80}), is(140));
+        assertThat("4 item", new Buy3GetCheapestFreeOfferService().apply(new Integer[]{60,40,80,80}), is(220));
     }
 }

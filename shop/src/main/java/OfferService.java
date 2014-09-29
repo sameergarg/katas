@@ -1,4 +1,4 @@
 public interface OfferService {
 
-    public int apply(int numberOfItems);
+    public int apply(Integer[] itemsCost);
 }

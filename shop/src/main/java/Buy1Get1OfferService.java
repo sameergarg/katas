@@ -1,13 +1,14 @@
 public class Buy1Get1OfferService implements OfferService {
 
-    private int singleItemCost;
-
-    public Buy1Get1OfferService(int singleItemCost) {
-        this.singleItemCost = singleItemCost;
-    }
 
     @Override
-    public int apply(int numberOfItems) {
-        return (numberOfItems/2)* singleItemCost + (numberOfItems%2)* singleItemCost;
+    public int apply(Integer[] itemsCost) {
+        int numberOfItems = itemsCost.length;
+        
+        if(numberOfItems==0){
+            return 0;
+        }
+
+        return (numberOfItems /2)* itemsCost[0] + (numberOfItems %2)* itemsCost[0];
     }
 }
